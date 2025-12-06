@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сладкий сундук</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/style.css" />
+
+  </head>
+  <body>
+<section class="assortment-section">
+  <div class="container">
+    <div class="title-wrap">
+      <h2 class="big-title">Для любых событий и дорогих вам людей</h2>
+    </div>
+
+    <div class="cards-wrap">
+      <div class="card">
+        <div class="image-wrap">
+          <img src="./img/кремовый-замок.png" alt="Кремовый замок" class="image">
+        </div>
+        <div class="info">
+          <div class="text-wrap">
+            <div class="name">Кремовый замок</div>
+            <div class="description">Нежный крем любого цвета на выбор, ванильная основа</div>
+          </div>
+          <div class="price-wrap">
+            <div class="price">150 ₽/шт.</div>
+            <div class="button-wrap">
+              <a href="#" class="order-button">Заказать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-wrap">
+          <img src="./img/малиновый-рай.png" alt="Малиновый рай" class="image">
+        </div>
+        <div class="info">
+          <div class="text-wrap">
+            <div class="name">Малиновый рай</div>
+            <div class="description">Воздушный крем, темная основа и ягода малины</div>
+          </div>
+          <div class="price-wrap">
+            <div class="price">150 ₽/шт.</div>
+            <div class="button-wrap">
+              <a href="#" class="order-button">Заказать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-wrap">
+          <img src="./img/фейверк.png" alt="Фейерверк" class="image">
+        </div>
+        <div class="info">
+          <div class="text-wrap">
+            <div class="name">Фейерверк</div>
+            <div class="description">Разноцветный крем, с бисквитной основой</div>
+          </div>
+          <div class="price-wrap">
+            <div class="price">150 ₽/шт.</div>
+            <div class="button-wrap">
+              <a href="#" class="order-button">Заказать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-wrap">
+          <img src="./img/мыс-безумия.png" alt="Мыс безумия" class="image">
+        </div>
+        <div class="info">
+          <div class="text-wrap">
+            <div class="name">Мыс безумия</div>
+            <div class="description">Разноцветная основа, стружка и нежный крем</div>
+          </div>
+          <div class="price-wrap">
+            <div class="price">150 ₽/шт.</div>
+            <div class="button-wrap">
+              <a href="#" class="order-button">Заказать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-wrap">
+          <img src="./img/облачная-сказка.png" alt="Облачная сказка" class="image">
+        </div>
+        <div class="info">
+          <div class="text-wrap">
+            <div class="name">Облачная сказка</div>
+            <div class="description">Светлая основа, нежный крем со стружкой сверху</div>
+          </div>
+          <div class="price-wrap">
+            <div class="price">150 ₽/шт.</div>
+            <div class="button-wrap">
+              <a href="#" class="order-button">Заказать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-wrap">
+          <img src="./img/темный-рыцарь.png" alt="Темный рыцарь" class="image">
+        </div>
+        <div class="info">
+          <div class="text-wrap">
+            <div class="name">Темный рыцарь</div>
+            <div class="description">Темная основа, нежный крем и вкусные шарики</div>
+          </div>
+          <div class="price-wrap">
+            <div class="price">150 ₽/шт.</div>
+            <div class="button-wrap">
+              <a href="#" class="order-button">Заказать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="modal-overlay hidden">
+  <div class="modal-form">
+    <button class="modal-close" aria-label="Закрыть">×</button>
+    <div class="modal-title">
+      <p><strong>Чтобы сделать заказ, расскажите нам о себе</strong></p>
+    </div>
+    <form class="order-form" id="orderForm">
+      <div class="form-grid">
+        <input type="text" name="name" class="input-field" placeholder="Имя" required>
+        <input type="tel" name="phone" class="input-field" placeholder="Телефон" required>
+        <input type="email" name="email" class="input-field" placeholder="Электронная почта">
+        <input type="text" name="calltime" class="input-field" placeholder="Удобное время для звонка">
+      </div>
+
+       <p>Мы перезвоним Вам в удобное время, чтобы уточнить ваши пожелания</p>
+      <label class="checkbox-wrap">
+        <input type="checkbox" id="consent" required>
+        <span>Я согласен с условиями обработки персональных данных</span>
+      </label>
+      <button type="submit" class="submit-order" disabled>Оформить заказ</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+<section class="gallery">
+  <div class="gallery__header">
+    <h2 class="gallery__title">Сделали более 3.000 заказов за 2 года</h2>
+    <p class="gallery__description">Посмотрите фото реальных заказов из нашего Instagram</p>
+  </div>
+
+  <ul class="gallery__grid">
+  <li class="gallery__item">
+    <img src="./img/photo.png" alt="Фото заказа">
+  </li>
+  <li class="gallery__item">
+    <img src="./img/photo2.png" alt="Фото заказа">
+  </li>
+  <li class="gallery__item">
+    <img src="./img/photo3.png" alt="Фото заказа">
+  </li>
+  <li class="gallery__item">
+    <img src="./img/photo4.png" alt="Фото заказа">
+  </li>
+  <li class="gallery__item">
+    <img src="./img/photo5.png" alt="Фото заказа">
+  </li>
+  <li class="gallery__item">
+    <img src="./img/photo6.png" alt="Фото заказа">
+  </li>
+  <li class="gallery__item">
+    <img src="./img/photo7.png" alt="Фото заказа">
+  </li>
+  <li class="gallery__item">
+    <img src="./img/photo8.png" alt="Фото заказа">
+  </li>
+  <li class="gallery__item">
+    <img src="./img/photo9.png" alt="Фото заказа">
+  </li>
+</ul>
+
+</section>
+
+
+
+
+ <script src="index.js"></script>
+  </body>
+</html>
