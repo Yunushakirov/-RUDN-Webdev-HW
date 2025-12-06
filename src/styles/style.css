@@ -1,0 +1,72 @@
+body {
+  font-family: 'Montserrat';
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 370px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    padding: 0 114px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 820px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 580px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+Импортируй в main.tsx / index.tsx:
+
+ts
+Copy code
+import "./styles/index.css";
+src/components/CakeList/CakeList.module.css
+css
+Copy code
+.title-wrap {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.big-title {
+  font-size: 48px;
+  font-weight: 500;
+  color: #2e363e;
+}
+
+.cards-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+@media (max-width: 1024px) {
+  .cards-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .cards-wrap {
+    grid-template-columns: 1fr;
+  }
+}

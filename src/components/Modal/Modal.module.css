@@ -1,0 +1,163 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-form {
+  background: #ffffff;
+  padding: 6vh 5vw;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 60%;
+  min-width: 300px;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.modal-title {
+  font-size: 1.313rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.modal-title p {
+  margin: 8px 0;
+}
+
+.modal-close {
+  position: absolute;
+  top: 26px;
+  right: 30px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-form .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 500px) {
+  .order-form .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.input-field {
+  padding: 18px 24px;
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.order-form p {
+  font-size: 14px;
+  color: #2e363e;
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.checkbox-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #7e868e;
+}
+
+.checkbox-wrap input {
+  width: 14px;
+  height: 14px;
+}
+
+.checkbox-wrap span {
+  line-height: 1.3;
+}
+
+.submit-order {
+  width: fit-content;
+  align-self: center;
+  padding: 20px 64px;
+  background-color: #fcd24d;
+  color: #2e363e;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.submit-order:hover {
+  background-color: #48535a;
+  color: #ffffff;
+  transform: scale(1.03);
+}
+
+.submit-order:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1024px) {
+  .modal-form {
+    padding: clamp(1rem, 5vw, 2.5rem);
+    gap: 24px;
+  }
+
+  .modal-title {
+    font-size: 1rem;
+  }
+
+  .input-field {
+    font-size: 13px;
+  }
+
+  .submit-order {
+    font-size: 14px;
+  }
+
+  .modal-close {
+    top: 16px;
+    right: 16px;
+    font-size: 16px;
+    width: 26px;
+    height: 26px;
+  }
+
+  .order-form .form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
